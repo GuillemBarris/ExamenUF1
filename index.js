@@ -19,15 +19,24 @@ function llegirProductes(){
 const  productes = llegirProductes()
 function MostrarProducteSegonsLaID(productes, id){
     const producte = productes.find(producte => producte.id === id);
-    console.log(producte);
+    console.table(producte);
 }
 function MostrarProductes(productes){
-    console allproductes = productes.map(producte => {
-        console.log(producte);
+    const allproductes = productes.map(producte => {
+        console.table(producte);
     });
+    return allproductes;
 }
-console.log('Mostrar tots els productes');
+const producte = llegirProductes()[0];
+function MostrarProducte(producte){
+    console.table(producte);
+
+}
+
+console.log('Mostrar producte Tasca 2');
+MostrarProducte(producte);
+console.log('Mostrar tots els productes Tasca 3');
 
 MostrarProductes(productes);
-console.log('Mostrar producte segons la ID');
+console.log('Mostrar producte segons la ID Tasca 4');
 MostrarProducteSegonsLaID(productes, 2);
